@@ -1,0 +1,20 @@
+<form novalidate [formGroup]="formValidation">
+  <div class="row">
+    <div class="col-6">
+      <app-input [label]="CEP" errorMessage="Campo inválido!" idElement="cep-form-validation">
+        <input class="form-control" formControlName="code" autocomplete="off" placeholder="Cep">
+      </app-input>
+
+      <span class="help-block has-error-block" *ngIf="formValidation.hasError('codeNotFound')"><i class="fa fa-remove"></i>
+        CEP não encontrado!</span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-success pull-right" [disabled]="!formValidation.valid" (click)="validar()"><i class="fa fa-credit-card"></i>
+        Validar
+      </button>
+    </div>
+  </div>
+</form>

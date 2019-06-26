@@ -1,0 +1,11 @@
+<form novalidate [formGroup]="formGroup">
+
+  <div class="row">
+    <div *ngFor="let item of formItems" class="col-sm-{{item.sm}} col-xs-{{item.xs}}">
+      <app-input [label]="item.label">
+        <input class="form-control" formControlName="{{item.name}}" autocomplete="off" placeholder="{{item.placeHolder}}">
+      </app-input>
+    </div>
+  </div>
+
+</form>

@@ -1,0 +1,47 @@
+**********************************************************************************
+<h3 style="color: blue;">Usuári@s</h3>
+**********************************************************************************
+<div *ngFor="let user of users">
+  --------------------------------------------------------------------------------
+  <p><strong>ID:</strong> {{user.id}}</p>
+  <p><strong>NOME:</strong> {{user.name}}</p>
+  <p><strong>EMAIL:</strong> {{user.email}}</p>
+  --------------------------------------------------------------------------------
+</div>
+
+**********************************************************************************
+<h3 style="color: green;">Usuári@ {{user.name}}</h3>
+**********************************************************************************
+
+<p>
+  ID: {{user.id}}
+</p>
+
+<p>
+  EMAIL: {{user.email}}
+</p>
+
+<h3 style="color: rgb(246, 199, 45);">Posts</h3>
+
+<div *ngFor="let post of postsFromUser" style="margin-right: 10px; display: inline-block;">
+  <div><strong>ID: </strong> {{post.id}}</div>
+  <div><strong>TÍTULO: </strong> {{post.title}}</div>
+  <div><strong>DATA: </strong> {{post.date | date : "dd/MM/yyyy"}}</div>
+  <div><strong>CORPO: </strong> {{post.body}}</div>
+</div>
+
+<br>
+<br>
+
+**********************************************************************************
+<h3 style="color: rgb(95, 64, 7)">Post</h3>
+**********************************************************************************
+
+<p>ID: {{post.id}}</p>
+<p>TÍTULO: {{post.title}}</p>
+<p>DATA: {{post.date | date: 'dd/MM/yyyy'}}</p>
+<p>CORPO: {{post.body}}</p>
+
+<p>
+  AUTOR: {{post.author.name}} | ID: {{post.author.id}}
+</p>

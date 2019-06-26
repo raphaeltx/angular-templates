@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+
+.row-a {
+    background-color: aqua;
+}
+
+.row-b {
+    background-color: rgb(167, 98, 98);
+}
+
+.row-c {
+    background-color: chocolate;
+}
+
+.valid-feedback {
+    display: inherit !important;
+}
+
+.invalid-feedback {
+    display: inherit !important;
+}
+
+.is-froala-editor-invalid {
+    border: 1px solid #dc3545;
+}
+
+.is-froala-editor-valid {
+    border: 1px solid #28a745;
+}
+
+.is-valid {
+    background-image: none !important;
+}
+
+.is-invalid {
+    background-image: none !important;
+}
