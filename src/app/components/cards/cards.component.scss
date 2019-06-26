@@ -1,11 +1,19 @@
-html, body {
-    background-color: gray;
+@media screen and (min-width: 768px) {
+    .padding-r-0 {
+        padding-right: 2.5px !important;
+    }
+
+    .padding-l-0 {
+        padding-left: 2.5px !important;
+    }
 }
 
-@media (min-width: 34em) {
-    .card-columns {
-        -webkit-column-count: 2;
-        -moz-column-count: 2;
-        column-count: 2;
+@media screen and (max-width: 768px) {
+    .margin-b-sm-1 {
+        margin-bottom: 5px !important;
     }
+}
+
+.margin-b-1 {
+    margin-bottom: 5px !important;
 }

@@ -35,3 +35,7 @@
 .is-invalid {
     background-image: none !important;
 }
+
+html, body {
+    background-color: rgb(156, 156, 156);
+}
